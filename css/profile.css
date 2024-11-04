@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  padding: 16px 0;
+}
+.nav-item a {
+  color: var(--title-color);
+  font-size: 19px;
+  margin-left: 16px;
+}
+.navbar-nav .nav-item .active {
+  color: #f3ca52;
+  font-weight: 600;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f3ca52;
+  font-weight: 600;
+}
+.navbar-toggler {
+  background-color: #f3ca52;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    background-color: #08080a;
+    padding: 8px 16px;
+  }
+  .nav-item {
+    margin-bottom: 16px;
+  }
+  .navbar-collapse {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+}
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+.login {
+  font-weight: 500;
+  font-size: 18px;
+  color: #f3ca52;
+  border-color: #f3ca52;
+}
+.login:hover {
+  background-color: #f3ca52;
+  color: var(--container-color);
+  border-color: #f3ca52;
+}
+.signup {
+  background-color: #f3ca52;
+  color: var(--container-color);
+  border-color: #f3ca52;
+  font-weight: 500;
+}
+.signup:hover {
+  background-color: #e3bd4a;
+  color: var(--container-color);
+  border-color: #dfb63b;
+}
+
+header {
+  text-align: center;
+  background-color: #343a40; 
+  padding: 20px;
+}
+
+.profile-logo {
+  width: 100px;
+}
+
+.profile-name {
+  color: #F3CA52; 
+  font-size: 24px;
+}
+
+.card {
+  border: 1px solid #F3CA52; 
+}
+
+.city-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #343a40; 
+  color: #F3CA52; 
+}
+
+.add-btn {
+  background-color: #F3CA52; 
+  color: #343a40;
+  border: none;
+}
+
+.add-btn:hover {
+  background-color: #D2A845; 
+}
+
+.plan-section {
+  background-color: #343a40;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#travel-plan {
+  list-style-type: none;
+  padding: 0;
+}
+
+#travel-plan li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #F3CA52; 
+  border-radius: 5px;
+  color: #343a40; 
+}
+
+.edit-btn {
+  margin-top: 20px;
+  background-color: #F3CA52;
+  color: #343a40; 
+  border: none;
+}
+
+.edit-btn:hover {
+  background-color: #D2A845; 
+}
+
+footer {
+  min-height: 280px;
+  color: var(--body-font);
+  background-color: #08080a; 
+  padding-top: 100px;
+  text-align: center;
+}
+
+.footer-tags {
+  margin-bottom: 30px;
+}
+
+.footer-tags a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 19px;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+
+.footer-tags a:hover {
+  color: #F3CA52; 
+}
+
+.end p {
+  color: var(--text-color-light);
+  margin: 16px auto;
+}
+
+hr {
+  color: #F3CA52; 
+}

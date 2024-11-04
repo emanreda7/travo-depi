@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="pstyle.css" />
+    <link rel="icon" href="img/WhatsApp Image 2024-10-24 at 11,30,54_201ad3a5-photoaidcom-cropped (1).jpg " />
+  </head>
+
+  <body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="../assets/images/logolight.svg" alt="" width="130px" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blogs">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tips">Tips</a>
+            </li>
+          </ul>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn signup me-md-2" type="button" id="signout">Sign Up</button>
+            <button class="btn login btn-outline" id="signinnav" type="button">Log in</button>
+            <a href="#" id="navuser">
+              <div class="name-img">
+                <img src="images/blank-profile-picture-973460_640.png" class="" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="bg-dark text-center p-4">
+      <div class="profile-header">
+        <img src="./assets/images/3135715.png" alt="User Logo" class="profile-logo rounded-circle" />
+        <h1 class="profile-name mt-3">Welcome Back!</h1>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="gallery text-center">
+        <h2 class="text-light">Explore Cities</h2>
+        <div class="row mt-4" id="city-list">
+          <!-- City cards with hard-coded images -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card bg-dark text-light mb-4">
+              <img src="./assets/images/steptodown.png" alt="Paris" class="card-img-top city-img" />
+              <div class="card-body">
+                <h3 class="card-title">Paris</h3>
+                <p class="card-text">
+                  City of lights and love. Famous for its historic architecture, fashion, and cuisine.
+                </p>
+                <p class="card-text">Travel Time: 2 hours from London by Eurostar.</p>
+                <p class="card-text">Suggested Stay: 3-5 days.</p>
+                <button class="btn add-btn" data-index="0">Add to Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card bg-dark text-light mb-4">
+              <img src="./assets/images/steptodown2.png" alt="Tokyo" class="card-img-top city-img" />
+              <div class="card-body">
+                <h3 class="card-title">Tokyo</h3>
+                <p class="card-text">A bustling city blending traditional temples with futuristic architecture.</p>
+                <p class="card-text">Travel Time: 12 hours from New York.</p>
+                <p class="card-text">Suggested Stay: 5-7 days.</p>
+                <button class="btn btn-primary add-btn" data-index="1">Add to Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card bg-dark text-light mb-4">
+              <img src="./assets/images/steptodown3.png" alt="New York" class="card-img-top city-img" />
+              <div class="card-body">
+                <h3 class="card-title">New York</h3>
+                <p class="card-text">
+                  The city that never sleeps, famous for its skyline, Broadway, and cultural diversity.
+                </p>
+                <p class="card-text">Travel Time: 7 hours from London.</p>
+                <p class="card-text">Suggested Stay: 4-6 days.</p>
+                <button class="btn btn-primary add-btn" data-index="2">Add to Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card bg-dark text-light mb-4">
+              <img src="./assets/images/steptodown4.png" alt="Sydney" class="card-img-top city-img" />
+              <div class="card-body">
+                <h3 class="card-title">Sydney</h3>
+                <p class="card-text">Home to iconic landmarks like the Sydney Opera House and Bondi Beach.</p>
+                <p class="card-text">Travel Time: 14 hours from Los Angeles.</p>
+                <p class="card-text">Suggested Stay: 5-7 days.</p>
+                <button class="btn btn-primary add-btn" data-index="3">Add to Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card bg-dark text-light mb-4">
+              <img src="./assets/images/steptodown5.png" alt="Rio de Janeiro" class="card-img-top city-img" />
+              <div class="card-body">
+                <h3 class="card-title">Rio de Janeiro</h3>
+                <p class="card-text">Famous for its beaches, Carnaval, and the Christ the Redeemer statue.</p>
+                <p class="card-text">Travel Time: 10 hours from New York.</p>
+                <p class="card-text">Suggested Stay: 4-6 days.</p>
+                <button class="btn btn-primary add-btn" data-index="4">Add to Plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="plan-section mt-5">
+        <h2 class="text-light">My Travel Plan</h2>
+        <ul id="travel-plan" class="list-group bg-dark text-light">
+          <!-- Selected cities will be listed here -->
+        </ul>
+        <button id="edit-btn" class="btn btn-warning mt-3 d-none">Edit Plan</button>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row tags">
+          <div class="footer-tags">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#tips">Tips</a>
+            <a href="#blogs">Blogs</a>
+          </div>
+        </div>
+        <hr />
+        <div class="row end">
+          <p>© 2024 Travo | Developed by Esraa , Eman , Amr and yousef</p>
+        </div>
+      </div>
+          
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="pja.js"></script>
+  </body>
+</html>
